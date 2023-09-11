@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScrip TP1</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    
+    .EJ1 {
+      margin-top: 100px;
+      text-align: center;
+    }
+
+    .cajaDistancia {
+      text-align: center;
+      border: solid black 2px;
+      margin: 10px;
+    }
+
+    .EJ2 {
+      margin-top: 50px;
+      text-align: center;
+    }
+    .cajaOrden{
+      border: solid black 2px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Ejercicio JavaScript 1</h1>
+  <div class="EJ1">
+    <label>Distancia:</label>
+    <br>
+    <input type="number" id="distancia">
+    <br>
+    <button onclick="calcularDistancia()">Calcular</button>
+    <br>
+    <div class="cajaDistancia">
+      <p id="metros"></p>
+    </div>
+  </div>
+  <div class="EJ2">
+    <label>Ingresar numeros a ordenar:</label>
+    <br>
+    <input type="number" id="numeros">
+    <br>
+    <button onclick="almacenarNumeros()">Cargar</button>
+    <br>
+    <div class="cajaOrden">
+      <p id="numerosOrdenados"></p>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
